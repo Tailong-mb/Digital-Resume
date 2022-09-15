@@ -9,10 +9,11 @@ html {
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(120px, auto);
   grid-column-gap: 4px;
-  margin-right: 4rem;
-  margin-left: 4rem;
+  row-gap: 10px;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .hero-header-logo {
@@ -24,7 +25,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
   font-weight: 400;
   border-radius: 5px;
   align-self: center;
@@ -54,7 +54,7 @@ body {
 
 .name {
   font-weight: bold;
-  margin: 2px;
+  margin-bottom: 3px;
 }
 
 .hero-header-presentation {
@@ -63,4 +63,148 @@ body {
   flex-direction: column;
   gap: 1px;
   align-self: center;
+}
+
+.hero-experiences {
+  grid-column: 4/5;
+  font-family: "Alegreya", sans-serif;
+  align-self: center;
+  font-weight: bold;
+}
+
+.hero-experiences-content {
+  grid-column: 1/9;
+}
+
+.hero-experiences-content-date {
+  grid-column: 1/2;
+  line-height: 3;
+}
+
+.hero-experiences-content-description {
+  grid-column: 4/9;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-experiences-content-description-title {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-family: "Alegreya", sans-serif;
+  align-items: center;
+}
+
+.hero-experiences-content-description-title-work {
+  font-weight: bold;
+}
+
+.hero-experiences-content-description-location {
+  font-style: italic;
+}
+
+.hero-education {
+  grid-column: 10/13;
+  grid-row: 2/3;
+  font-family: "Alegreya", sans-serif;
+  align-self: center;
+  font-weight: bold;
+}
+
+.hero-education-content {
+  grid-column: 10/13;
+  grid-row: 3/4;
+}
+
+.hero-education-content-degree {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  line-height: 2;
+}
+
+.hero-education-content-degree-title {
+  font-weight: bold;
+}
+
+.hero-education-content-degree-name {
+  font-style: italic;
+}
+
+.hero-education-content-degree-location {
+  font-style: italic;
+}
+
+.hero-skills {
+  grid-column: 10/13;
+  grid-row: 4/6;
+  font-family: "Alegreya", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 449px) {
+  .hero-education-content-degree-name,
+  .hero-education-content-degree-title {
+    font-size: 0.25rem !important;
+  }
+}
+@media (min-width: 450px) and (max-width: 599px) {
+  body {
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+  }
+
+  .hero-education-content-degree-name,
+  .hero-education-content-degree-title {
+    font-size: 0.3rem !important;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  body {
+    margin-right: 3.5rem;
+    margin-left: 3.5rem;
+  }
+
+  .hero-education-content-degree-name,
+  .hero-education-content-degree-title {
+    font-size: 0.45rem !important;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  body {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  .hero-header-logo {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1339px) {
+  body {
+    margin-right: 7rem;
+    margin-left: 7rem;
+  }
+  .hero-header-logo {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1340px) and (max-width: 1519px) {
+  body {
+    margin-right: 8rem;
+    margin-left: 8rem;
+  }
+}
+
+@media (min-width: 1520px) {
+  body {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
 }
