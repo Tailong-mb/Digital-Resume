@@ -131,10 +131,12 @@ html {
 
 .hero-education-content-degree-title {
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .hero-education-content-degree-name {
   font-style: italic;
+  white-space: nowrap;
 }
 
 .hero-education-content-degree-location {
@@ -152,13 +154,17 @@ html {
   grid-column: 10/13;
 }
 
+.hero-skills > ul {
+  padding: 0;
+}
+
 .gifImageContainer {
   grid-column: 10/13;
   width: 100%;
   aspect-ratio: 1/1;
 }
 
-.gifImageContainer > img {
+.gifImageContainer > a > img {
   width: 100%;
   border-radius: 5px;
   border: solid black 1px;
@@ -293,6 +299,10 @@ input:valid ~ .underline::before {
   gap: 0.5rem;
 }
 
+.footer:hover > a > span {
+  text-decoration: underline;
+}
+
 .linkedin {
   grid-column: 2/4;
   align-self: center;
@@ -320,11 +330,6 @@ input:valid ~ .underline::before {
 }
 
 @media (max-width: 449px) {
-  .hero-education-content-degree-name,
-  .hero-education-content-degree-title {
-    font-size: 0.25rem !important;
-  }
-
   .element-footer {
     gap: 0.2rem;
   }
@@ -343,11 +348,6 @@ input:valid ~ .underline::before {
     margin-left: 2.5rem;
   }
 
-  .hero-education-content-degree-name,
-  .hero-education-content-degree-title {
-    font-size: 0.3rem !important;
-  }
-
   .submit-button {
     width: 40px;
     height: 40px;
@@ -358,11 +358,6 @@ input:valid ~ .underline::before {
   .grid-container {
     margin-right: 3.5rem;
     margin-left: 3.5rem;
-  }
-
-  .hero-education-content-degree-name,
-  .hero-education-content-degree-title {
-    font-size: 0.45rem !important;
   }
 }
 
