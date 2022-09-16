@@ -4,9 +4,9 @@ import { CONF } from "./config.js";
 
 emailjs.init(CONF.PUBLIC_KEY);
 
-function sendEmail(params) {
-  let form = document.getElementById("myform");
+const form = document.querySelector("form");
 
+function sendEmail(params) {
   emailjs.sendForm(CONF.SERVICE_ID, CONF.TEMPLATE_ID, form).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
@@ -20,5 +20,13 @@ function sendEmail(params) {
     }
   );
 }
+
+document.querySelector(".message-contact").addEventListener("click", () => {
+  form.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "nearest",
+  });
+});
 
 document.querySelector(".submit-button").addEventListener("click", sendEmail);

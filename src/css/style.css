@@ -57,7 +57,6 @@ html {
 }
 
 .name {
-  font-weight: bold;
   margin-bottom: 3px;
 }
 
@@ -73,7 +72,6 @@ html {
   grid-column: 4/5;
   font-family: "Alegreya", sans-serif;
   align-self: center;
-  font-weight: bold;
 }
 
 .hero-experiences-content {
@@ -100,20 +98,11 @@ html {
   align-items: center;
 }
 
-.hero-experiences-content-description-title-work {
-  font-weight: bold;
-}
-
-.hero-experiences-content-description-location {
-  font-style: italic;
-}
-
 .hero-education {
   grid-column: 10/13;
   grid-row: 2/3;
   font-family: "Alegreya", sans-serif;
   align-self: center;
-  font-weight: bold;
 }
 
 .hero-education-content {
@@ -130,23 +119,16 @@ html {
 }
 
 .hero-education-content-degree-title {
-  font-weight: bold;
   white-space: nowrap;
 }
 
 .hero-education-content-degree-name {
-  font-style: italic;
   white-space: nowrap;
-}
-
-.hero-education-content-degree-location {
-  font-style: italic;
 }
 
 .hero-project-title {
   grid-column: 10/13;
   font-family: "Alegreya", sans-serif;
-  font-weight: bold;
   margin-bottom: 1rem;
 }
 
@@ -173,7 +155,6 @@ html {
 
 .contact-title {
   text-align: center;
-  font-style: italic;
 }
 
 .contact-section {
@@ -187,9 +168,15 @@ html {
   text-align: center;
 }
 
-.message-contact > title {
-  font-weight: bold;
+.message-contact > .title {
+  text-decoration: none;
+  color: black;
 }
+
+.message-contact > .title:hover {
+  text-decoration: underline;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -279,6 +266,7 @@ input:valid ~ .underline::before {
 }
 
 .submit-button {
+  margin-top: 1rem;
   border-radius: 50%;
   text-align: center;
   border: rgb(81, 79, 79) solid 1px;
@@ -290,7 +278,7 @@ input:valid ~ .underline::before {
 }
 
 .submit-button:hover {
-  animation: 1s button-form;
+  animation: 1s button-form forwards;
 }
 
 .element-footer {
@@ -340,6 +328,10 @@ input:valid ~ .underline::before {
   }
   .hero-experiences-content-date {
     line-height: 3;
+  }
+
+  .github {
+    grid-column: 5/7;
   }
 }
 @media (min-width: 450px) and (max-width: 599px) {

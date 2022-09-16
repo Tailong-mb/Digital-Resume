@@ -36,6 +36,14 @@
   font-size: 0.45rem;
 }
 
+.is-italic {
+  font-style: italic;
+}
+
+.is-bold {
+  font-weight: bold;
+}
+
 .text {
   font-size: 0.4rem;
   font-family: "Alegreya", sans-serif;
