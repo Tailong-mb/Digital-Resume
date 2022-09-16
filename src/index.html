@@ -18,12 +18,27 @@
       rel="stylesheet"
     />
 
+    <!-- EMAIL -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("YOUR_PUBLIC_KEY");
+      })();
+    </script>
+
     <!-- CSS LOADING -->
     <link rel="stylesheet" href="./css/font.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/load.css" />
     <title>Digital Resume</title>
+
+    <!-- SCRIPT JS -->
+    <script type="text/javascript" src="./js/email.js"></script>
   </head>
+
   <body>
     <div class="load">
       <div class="load-message">
@@ -138,7 +153,7 @@
       <!-- FROM SECTION -->
       <div class="contact-section">
         <div class="title contact-title">Contact</div>
-        <form action="#">
+        <form action="#" id="myFrom">
           <div class="input-data">
             <input
               type="text"
@@ -152,7 +167,7 @@
           </div>
           <div class="input-data">
             <input
-              id="firstName"
+              id="secondName"
               type="text"
               name="secondName"
               class="subtitle"
