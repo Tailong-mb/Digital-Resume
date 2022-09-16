@@ -2,8 +2,6 @@
 
 import { CONF } from "./config.js";
 
-emailjs.init(CONF.PUBLIC_KEY);
-
 const form = document.querySelector("form");
 
 function sendEmail(params) {
@@ -21,12 +19,27 @@ function sendEmail(params) {
   );
 }
 
-document.querySelector(".message-contact").addEventListener("click", () => {
-  form.scrollIntoView({
-    behavior: "smooth",
-    block: "center",
-    inline: "nearest",
+function movetoForm() {
+  document.querySelector(".message-contact").addEventListener("click", () => {
+    form.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+      inline: "nearest",
+    });
   });
-});
+}
 
-document.querySelector(".submit-button").addEventListener("click", sendEmail);
+window.addEventListener("load", (event) => {
+  //Scrolling
+  document.body.classList.add("stop-scrolling");
+  setTimeout(() => {
+    document.body.classList.remove("stop-scrolling");
+  }, 5000);
+
+  movetoForm();
+
+  //Email
+  emailjs.init(CONF.PUBLIC_KEY);
+
+  document.querySelector(".submit-button").addEventListener("click", sendEmail);
+});

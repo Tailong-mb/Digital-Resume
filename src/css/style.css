@@ -6,6 +6,11 @@ html {
   font-family: "Migra", sans-serif;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
