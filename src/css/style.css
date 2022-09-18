@@ -105,14 +105,14 @@ html {
 
 .hero-education {
   grid-column: 10/13;
-  grid-row: 2/3;
+  grid-row: 1/2;
   font-family: "Alegreya", sans-serif;
   align-self: center;
 }
 
 .hero-education-content {
   grid-column: 10/13;
-  grid-row: 3/4;
+  grid-row: 2/3;
 }
 
 .hero-education-content-degree {
@@ -168,7 +168,7 @@ html {
 
 .message-contact {
   grid-column: 4/9;
-  grid-row: 5/6;
+  grid-row: 4/5;
   align-self: center;
   text-align: center;
 }

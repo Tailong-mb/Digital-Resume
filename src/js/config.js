@@ -1,5 +1,5 @@
 export const CONF = {
-  PUBLIC_KEY: "zkw_7mOYkXTY79xtJ",
-  SERVICE_ID: "service_c42mj2a",
-  TEMPLATE_ID: "template_yskn4op",
+  PUBLIC_KEY: "WT3-5OtZi75kD6DqK",
+  SERVICE_ID: "service_wumfdrp",
+  TEMPLATE_ID: "template_xi5jugg",
 };
