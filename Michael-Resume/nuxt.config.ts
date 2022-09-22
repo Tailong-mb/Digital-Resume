@@ -7,7 +7,7 @@ export default {
       { hid: "description", name: "description", content: "" },
     ],
     link: [
-      { rel: "stylesheet", href: "https://kit.fontawesome.com/3d750a575c.js" },
+      { rel: "preconnect", href: "https://kit.fontawesome.com/3d750a575c.js" },
       //GOogle font
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
@@ -21,4 +21,5 @@ export default {
       },
     ],
   },
+  css: ["@/assets/css/main.css", "@/assets/css/font.css"],
 };
