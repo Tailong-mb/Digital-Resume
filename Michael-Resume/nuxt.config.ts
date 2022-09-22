@@ -1,4 +1,4 @@
-export default {
+export default defineNuxtConfig({
   head: {
     title: "Michael Resume",
     meta: [
@@ -8,7 +8,6 @@ export default {
     ],
     link: [
       { rel: "preconnect", href: "https://kit.fontawesome.com/3d750a575c.js" },
-      //GOogle font
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
@@ -35,4 +34,4 @@ export default {
       "@fortawesome/free-brands-svg-icons",
     ],
   },
-};
+});

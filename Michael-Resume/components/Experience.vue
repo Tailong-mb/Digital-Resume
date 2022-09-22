@@ -89,7 +89,7 @@
       <div class="title">
         I'm <span class="is-italic">always</span>
         <span class="is-bold">happy</span> to talk, don't
-        <sapn class="is-italic">hesitate</sapn> to contact me.
+        <span class="is-italic">hesitate</span> to contact me.
       </div>
     </div>
 
@@ -148,7 +148,7 @@
 
 <script>
 function movetoForm() {
-  form.scrollIntoView({
+  this.scrollIntoView({
     behavior: "smooth",
     block: "center",
     inline: "nearest",
