@@ -21,5 +21,18 @@ export default {
       },
     ],
   },
-  css: ["@/assets/css/main.css", "@/assets/css/font.css"],
+  css: [
+    "@/assets/css/main.css",
+    "@/assets/css/font.css",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+  ],
+  build: {
+    transpile: [
+      "@fortawesome/vue-fontawesome",
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/pro-solid-svg-icons",
+      "@fortawesome/pro-regular-svg-icons",
+      "@fortawesome/free-brands-svg-icons",
+    ],
+  },
 };
