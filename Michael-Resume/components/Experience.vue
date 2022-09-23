@@ -1,3 +1,14 @@
+<script setup lang="ts">
+const moveToForm = () => {
+  const form = document.getElementById("myform");
+  form.scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "nearest",
+  });
+};
+</script>
+
 <template>
   <div class="grid-container">
     <div class="hero-experiences subtitle is-bold">Experiences</div>
@@ -87,7 +98,7 @@
     <!-- MESSAGE -->
     <div class="message-contact" @click="moveToForm()">
       <div class="title">
-        I'm <span class="is-italic">always</span>
+        I'm <span class="is-italic">always </span>
         <span class="is-bold">happy</span> to talk, don't
         <span class="is-italic">hesitate</span> to contact me.
       </div>
@@ -145,13 +156,3 @@
     </div>
   </div>
 </template>
-
-<script>
-function movetoForm() {
-  this.scrollIntoView({
-    behavior: "smooth",
-    block: "center",
-    inline: "nearest",
-  });
-}
-</script>
