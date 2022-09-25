@@ -1,4 +1,8 @@
 <script setup lang="ts">
+//Import emailjs
+import emailjs from "@emailjs/browser";
+import { process } from "@node/process";
+
 const moveToForm = () => {
   const form = document.getElementById("myform");
   form.scrollIntoView({
@@ -6,6 +10,25 @@ const moveToForm = () => {
     block: "center",
     inline: "nearest",
   });
+};
+
+const sendEmail = () => {
+  const form = document.querySelector("form");
+  emailjs
+    .sendForm(
+      process.env.EMAIL.SERVICE,
+      process.env.EMAIL.TEMPLATE,
+      form,
+      process.env.EMAIL.KEY
+    )
+    .then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
 };
 </script>
 
@@ -91,7 +114,7 @@ const moveToForm = () => {
     <!-- IMAGE -->
     <div class="gifImageContainer">
       <div class="hero-project-title subtitle is-bold">Last Project</div>
-      <a href="https://portfolio-yanis-eight.vercel.app/">
+      <a href="https://portofolio-yanis.vercel.app">
         <img src="../assets/images/project.gif" alt="gif of my project" />
       </a>
     </div>
@@ -151,7 +174,7 @@ const moveToForm = () => {
         ></textarea>
       </form>
       <div class="button-container">
-        <button class="submit-button text">Send</button>
+        <button class="submit-button text" @click="sendEmail()">Send</button>
       </div>
     </div>
   </div>

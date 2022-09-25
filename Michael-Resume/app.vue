@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const blockScroll = () => {
-  console.log("test");
   const body = document.getElementsByTagName("body")[0];
   body.style.overflow = "hidden";
   setTimeout(() => {
