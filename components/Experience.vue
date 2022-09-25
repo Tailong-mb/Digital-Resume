@@ -13,7 +13,7 @@ const moveToForm = () => {
 
 const sendEmail = () => {
   const form = document.querySelector("form");
-  emailjs.sendForm(EMAIL.SERVICE, EMAIL.TEMPLATE, form, EMAIL.KEY).then(
+  emailjs.sendForm(EMAILSERVICE, EMAILTEMPLATE, form, EMAILKEY).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
     },
