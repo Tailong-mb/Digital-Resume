@@ -1,7 +1,7 @@
 <script setup lang="ts">
 //Import emailjs
 import emailjs from "@emailjs/browser";
-import process from "process";
+import process from "node:process";
 
 const moveToForm = () => {
   const form = document.getElementById("myform");
