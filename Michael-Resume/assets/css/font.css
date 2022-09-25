@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Migra";
+  src: local("Migra"),
+    url("../../assets/fonts/Migra/MigraItalic-ExtralightItalic.ttf")
+      format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Migra";
+  src: local("Migra"),
+    url("../../assets/fonts/Migra/Migra-Extralight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Migra";
+  src: local("Migra"),
+    url("../../assets/fonts/Migra/Migra-Extrabold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Migra";
+  src: local("Migra"),
+    url("../../assets/fonts/Migra/MigraItalic-ExtraboldItalic.ttf")
+      format("truetype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 0.7rem;
+}
+
+.subtitle {
+  font-size: 0.45rem;
+}
+
+.is-italic {
+  font-style: italic;
+}
+
+.is-bold {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 0.4rem;
+  font-family: "Alegreya", sans-serif;
+  text-align: justify;
+}
+
+@media (min-width: 450px) and (max-width: 599px) {
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .subtitle {
+    font-size: 0.6rem;
+  }
+
+  .text {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1339px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1340px) and (max-width: 1519px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1520px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+}

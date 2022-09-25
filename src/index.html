@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ICON -->
+    <script
+      src="https://kit.fontawesome.com/3d750a575c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;1,400;1,500&family=Oswald:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- EMAIL -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- CSS LOADING -->
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/load.css" />
+    <title>Digital Resume</title>
+
+    <!-- SCRIPT JS -->
+    <script type="module" src="./js/email.js"></script>
+  </head>
+
+  <body>
+    <header class="load">
+      <div class="load-message">
+        <div class="letter">W</div>
+        <div class="letter" style="animation-delay: 0.05s">E</div>
+        <div class="letter" style="animation-delay: 0.1s">L</div>
+        <div class="letter" style="animation-delay: 0.15s">C</div>
+        <div class="letter" style="animation-delay: 0.2s">O</div>
+        <div class="letter" style="animation-delay: 0.25s">M</div>
+        <div class="letter" style="animation-delay: 0.3s">E</div>
+      </div>
+    </header>
+    <main class="grid-container">
+      <!-- HEADER -->
+      <div class="hero-header-logo title"><span>M</span></div>
+      <div class="hero-header-information">
+        <div class="title name is-bold">Michael BARDOU</div>
+        <div class="subtitle">22/11/1997</div>
+        <div class="subtitle">michael.bardou@icloud.com</div>
+      </div>
+      <div class="hero-header-presentation">
+        <p class="text">
+          I am a web developer who is passionate about building web
+          applications. I am experienced in both front-end and back-end web
+          development, and I love challenge myself with both technologies.
+        </p>
+      </div>
+    </main>
+    <!-- EXPERIENCE SECTION -->
+    <div class="grid-container">
+      <div class="hero-experiences subtitle is-bold">Experiences</div>
+      <div class="hero-experiences-content-date title">2022</div>
+      <div class="hero-experiences-content-description">
+        <div class="hero-experiences-content-description-title">
+          <div
+            class="hero-experiences-content-description-title-work title is-bold"
+          >
+            DevOps
+          </div>
+          <span>-</span>
+          <div class="title">Pulsy</div>
+        </div>
+        <div
+          class="hero-experiences-content-description-location subtitle is-italic"
+        >
+          Villers-lès-Nancy, France
+        </div>
+        <div class="hero-experiences-content-description-comment text">
+          Contribution to the redesign of the log platform (systems and
+          applications) to maintain a sufficient level of security.
+        </div>
+      </div>
+      <div class="hero-experiences-content-date title">2019-2020</div>
+      <div class="hero-experiences-content-description">
+        <div class="hero-experiences-content-description-title">
+          <div
+            class="hero-experiences-content-description-title-work title is-bold"
+          >
+            Logic Tutor
+          </div>
+          <span>-</span>
+          <div class="title">University of lorraine</div>
+        </div>
+        <div
+          class="hero-experiences-content-description-location subtitle is-italic"
+        >
+          Nancy, France
+        </div>
+        <div class="hero-experiences-content-description-comment text">
+          To provide personalized support to undergraduate students in order to
+          solve their difficulties in propositional logic. All the students we
+          met validated their logic modules.
+        </div>
+      </div>
+      <!-- EDUCATION SECTION -->
+      <div class="hero-education subtitle is-bold">Education</div>
+      <div class="hero-education-content">
+        <div class="hero-education-content-degree">
+          <div class="hero-education-content-degree-title subtitle is-bold">
+            Philosophy :
+          </div>
+          <div class="hero-education-content-degree-name subtitle is-italic">
+            Master's degree
+          </div>
+        </div>
+        <div class="hero-education-content-degree">
+          <div class="hero-education-content-degree-title subtitle is-bold">
+            Developper:
+          </div>
+          <div class="hero-education-content-degree-name subtitle is-italic">
+            Two-year degree
+          </div>
+        </div>
+        <div class="hero-education-content-degree-location subtitle is-italic">
+          Nancy, France
+        </div>
+      </div>
+      <!-- SKILLS -->
+      <div class="hero-skills">
+        <div class="hero-project-title subtitle is-bold">Skills</div>
+        <ul class="text">
+          <li>Angular</li>
+          <li>Javascript,Typescript</li>
+          <li>Java</li>
+          <li>Python</li>
+        </ul>
+      </div>
+      <!-- IMAGE -->
+      <div class="gifImageContainer">
+        <div class="hero-project-title subtitle is-bold">Last Project</div>
+        <a href="https://portfolio-yanis-eight.vercel.app/">
+          <img src="../assets/images/project.gif" alt="gif of my project" />
+        </a>
+      </div>
+      <!-- MESSAGE -->
+      <div class="message-contact">
+        <div class="title">
+          I'm <span class="is-italic">always</span>
+          <span class="is-bold">happy</span> to talk, don't
+          <sapn class="is-italic">hesitate</sapn> to contact me.
+        </div>
+      </div>
+
+      <!-- FROM SECTION -->
+      <div class="contact-section">
+        <div class="title contact-title is-italic">Contact</div>
+        <form id="myform">
+          <div class="input-data">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              class="subtitle"
+              required
+            />
+            <div class="underline"></div>
+            <label class="subtitle" for="firstname">Firstname</label>
+          </div>
+          <div class="input-data">
+            <input
+              id="secondName"
+              type="text"
+              name="secondName"
+              class="subtitle"
+              required
+            />
+            <div class="underline"></div>
+            <label class="subtitle" for="secondName">Name</label>
+          </div>
+          <div class="input-data">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="subtitle"
+              required
+            />
+            <div class="underline"></div>
+            <label class="subtitle" for="email">Email</label>
+          </div>
+          <textarea
+            placeholder="Put your message"
+            type="text"
+            required
+            name="message"
+            class="textarea text"
+            id="message"
+          ></textarea>
+        </form>
+        <div class="button-container">
+          <button class="submit-button text">Send</button>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="grid-container">
+      <div class="linkedin subtitle footer">
+        <a
+          href="https://www.linkedin.com/in/michael-bardou-732483238/"
+          class="element-footer"
+        >
+          <i class="fa-brands fa-linkedin"></i><span>LINKEDIN</span></a
+        >
+      </div>
+      <div class="github subtitle footer">
+        <a href="https://github.com/Tailong-mb" class="element-footer">
+          <i class="fa-brands fa-github"></i><span>GITHUB</span></a
+        >
+      </div>
+      <div class="date-updated footer subtitle element-footer">
+        <i class="fa-regular fa-copyright"></i><span>2022</span>
+      </div>
+    </footer>
+  </body>
+</html>
