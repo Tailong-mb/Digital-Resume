@@ -1,6 +1,7 @@
 <script setup lang="ts">
 //Import emailjs
 import emailjs from "@emailjs/browser";
+import process from "process";
 
 const moveToForm = () => {
   const form = document.getElementById("myform");
@@ -13,14 +14,21 @@ const moveToForm = () => {
 
 const sendEmail = () => {
   const form = document.querySelector("form");
-  emailjs.sendForm(process.env.EMAILSERVICE, process.env.EMAILTEMPLATE, form, process.env.EMAILKEY).then(
-    function (response) {
-      console.log("SUCCESS!", response.status, response.text);
-    },
-    function (error) {
-      console.log("FAILED...", error);
-    }
-  );
+  emailjs
+    .sendForm(
+      process.env.EMAILSERVICE,
+      process.env.EMAILTEMPLATE,
+      form,
+      process.env.EMAILKEY
+    )
+    .then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
 };
 </script>
 
