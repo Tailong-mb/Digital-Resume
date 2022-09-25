@@ -2,6 +2,8 @@
 //Import emailjs
 import emailjs from "@emailjs/browser";
 
+const config = useRuntimeConfig();
+
 const moveToForm = () => {
   const form = document.getElementById("myform");
   form.scrollIntoView({
@@ -14,12 +16,7 @@ const moveToForm = () => {
 const sendEmail = () => {
   const form = document.querySelector("form");
   emailjs
-    .sendForm(
-      process.env.EMAILSERVICE,
-      process.env.EMAILTEMPLATE,
-      form,
-      process.env.EMAILKEY
-    )
+    .sendForm(config.EMAILSERVICE, config.EMAILTEMPLATE, form, config.EMAILKEY)
     .then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
@@ -173,7 +170,9 @@ const sendEmail = () => {
         ></textarea>
       </form>
       <div class="button-container">
-        <button class="submit-button text" @click="sendEmail()">Send</button>
+        <button class="submit-button text is-italic" @click="sendEmail()">
+          Send
+        </button>
       </div>
     </div>
   </div>

@@ -274,9 +274,8 @@ input:valid ~ .underline::before {
 
 .submit-button {
   margin-top: 1rem;
-  border-radius: 50%;
   text-align: center;
-  border: rgb(81, 79, 79) solid 1px;
+  border: none;
   width: 50px;
   height: 50px;
   padding: 0;

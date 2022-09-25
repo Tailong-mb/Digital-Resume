@@ -34,4 +34,9 @@ export default defineNuxtConfig({
       "@fortawesome/free-brands-svg-icons",
     ],
   },
+  publicRuntimeConfig: {
+    EMAILSERVICE: process.env.EMAILSERVICE,
+    EMAILTEMPLATE: process.env.EMAILTEMPLATE,
+    EMAILKEY: process.env.EMAILKEY,
+  },
 });
