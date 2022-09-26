@@ -7,7 +7,10 @@ export default defineNuxtConfig({
       { hid: "description", name: "description", content: "" },
     ],
     link: [
-      { rel: "preconnect", href: "https://kit.fontawesome.com/3d750a575c.js" },
+      {
+        href: "https://kit.fontawesome.com/3d750a575c.js",
+        crossorigin: "anonymous",
+      },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       {
         rel: "preconnect",
@@ -29,8 +32,6 @@ export default defineNuxtConfig({
     transpile: [
       "@fortawesome/vue-fontawesome",
       "@fortawesome/fontawesome-svg-core",
-      "@fortawesome/pro-solid-svg-icons",
-      "@fortawesome/pro-regular-svg-icons",
       "@fortawesome/free-brands-svg-icons",
     ],
   },

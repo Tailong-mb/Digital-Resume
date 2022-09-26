@@ -7,6 +7,7 @@ const blockScroll = () => {
   }, 5000);
 };
 
+
 onMounted(() => {
   blockScroll();
 });
